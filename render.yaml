@@ -10,7 +10,7 @@ services:
     name: horilla
     runtime: python
     buildCommand: './build.sh'
-    startCommand: 'python -m gunicorn horilaa.asgi:application -k uvicorn.workers.UvicornWorker'
+    startCommand: 'python -m gunicorn horila.asgi:application -k uvicorn.workers.UvicornWorker'
     envVars:
       - key: DATABASE_URL
         fromDatabase:
